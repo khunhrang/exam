@@ -1,0 +1,3 @@
+- เทคโนโลยี Container เข้ามาช่วยแก้ไขปัญหาอะไรในกระบวนการ Deployment ให้เขียนคำตอบพร้อมอธิบายเหตุผล
+
+การนำ Containers มาใช้ช่วยแก้ปัญหาเรื่องความแตกต่างกันของแต่ละ Environment หรือเรียกว่า Matrix from hell เช่น Software version ของ Environment Dev และ Production ตัวอย่างเช่น บน Dev ใช้ Python version 3.9 สามารถ Run Program ได้ แต่พอขึ้น PRD ปรากฏว่า Version Python เป็น version ที่เก่ากว่าโปรแกรมจึงทำงานผิดพลาด เป็นต้น พอเรานำ Container มาใช้ เราจะ Buildส่วนประกอบที่จำเป็นลงใน Image ใช้งานบน Dev และเมื่อพัฒนาเสร็จก็จะใช้ Image นั้น Deploy เพื่อใช้งานต่อบน PRD เราจึงมั่นใจได้ว่า Version ต่างๆของ Software ต่างๆใน Image จะไม่แตกตากกัน
